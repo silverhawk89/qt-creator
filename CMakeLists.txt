@@ -9,7 +9,7 @@ endif()
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 include(Utils)
 
-env_with_default("QTC_BUILD_WITH_PCH" ENV_QTC_BUILD_WITH_PCH ON)
+env_with_default("QTC_BUILD_WITH_PCH" ENV_QTC_BUILD_WITH_PCH OFF)
 env_with_default("QTC_WITH_TESTS" ENV_QTC_WITH_TESTS OFF)
 
 option(BUILD_WITH_PCH "Build with precompiled headers" "${ENV_QTC_BUILD_WITH_PCH}")
